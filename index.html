@@ -1,1 +1,78 @@
-Latest News brought to you by DD BitePu
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Beautiful Webpage</title>
+  <style>
+    /* Global styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    /* Styling for the label section */
+    .label {
+      background-color: #fff;
+      padding: 20px;
+      border-left: 5px solid #3498db;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+    
+    /* Styling for the image gallery */
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    
+    .images img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .images img:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .images {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Label Section with very long text -->
+    <div class="label">
+      (very long text)
+    </div>
+    <!-- Image Gallery -->
+    <div class="images">
+      <img src="https://raw.githubusercontent.com/thawdezin/lupyout/master/news/IMG_4246.JPG" alt="Image 1" />
+      <img src="https://raw.githubusercontent.com/thawdezin/lupyout/master/news/IMG_4247.JPG" alt="Image 2" />
+      <img src="https://raw.githubusercontent.com/thawdezin/lupyout/master/news/IMG_4248.JPG" alt="Image 3" />
+    </div>
+  </div>
+</body>
+</html>
